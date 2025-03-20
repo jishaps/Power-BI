@@ -4,3 +4,4 @@ from products table: Total Cost = SUMX(shipments,shipments[Boxes]*RELATED(produc
 2) division: Profit % = DIVIDE([Total Profit],[Total Sales])
 3) Number of records in a table: Total Shipments = COUNTROWS(shipments)
 4) Filter: LBS Count = CALCULATE([Total Shipments],shipments[Boxes]<50)
+5) In the model view, right click calendar in the data pane and choose mark as date
