@@ -11,3 +11,8 @@ from products table: Total Cost = SUMX(shipments,shipments[Boxes]*RELATED(produc
     VAR prev_month = [Total Sales (Prev Month)]
 RETURN 
     DIVIDE(this_month-prev_month,prev_month)
+   8) Latest Date = LASTDATE('calendar'[Start of Month])
+9) Total Sales Latest Month = 
+    VAR ld = [Latest Date]
+RETURN
+    CALCULATE([Total Sales],'calendar'[Date]=ld)
