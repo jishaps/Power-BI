@@ -29,3 +29,5 @@ from products table: Total Cost = SUMX(shipments,shipments[Boxes]*RELATED(produc
     RETURN DIVIDE(this_month_sales-prev_month_sales,prev_month_sales)
     12) field parameter
     13) zoom slider
+    14) format painter
+    15) conditional formatting
