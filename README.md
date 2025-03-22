@@ -7,12 +7,23 @@ from products table: Total Cost = SUMX(shipments,shipments[Boxes]*RELATED(produc
 5) In the model view, right click calendar in the data pane and choose mark as date
 6) Total Sales (Prev Month) = CALCULATE([Total Sales],PREVIOUSMONTH('calendar'[Date]))
 7) MoM Sales Change % = 
-    VAR this_month = [Total Sales]
-    VAR prev_month = [Total Sales (Prev Month)]
-RETURN 
-    DIVIDE(this_month-prev_month,prev_month)
+        VAR this_month = [Total Sales]
+        VAR prev_month = [Total Sales (Prev Month)]
+    RETURN 
+        DIVIDE(this_month-prev_month,prev_month)
    8) Latest Date = LASTDATE('calendar'[Start of Month])
 9) Total Sales Latest Month = 
-    VAR ld = [Latest Date]
-RETURN
-    CALCULATE([Total Sales],'calendar'[Date]=ld)
+        VAR ld = [Latest Date]
+    RETURN
+        CALCULATE([Total Sales],'calendar'[Date]=ld)
+10) Latest MoM Sales Change % = 
+        VAR ld = [Latest Date]
+        VAR this_month_sales = [Total Sales Latest Month]
+        VAR prev_month_sales = CALCULATE([Total Sales],'calendar'[Start of Month]=EDATE(ld,-1))
+    RETURN DIVIDE(this_month_sales-prev_month_sales,prev_month_sales)
+11) Calculated Groups:
+    MoM % = 
+        VAR ld = LASTDATE('calendar'[Start of Month])
+        VAR this_month_sales = CALCULATE(SELECTEDMEASURE(),'calendar'[Start of Month]=ld)
+        VAR prev_month_sales = CALCULATE(SELECTEDMEASURE(),'calendar'[Start of Month]=EDATE(ld,-1))
+    RETURN DIVIDE(this_month_sales-prev_month_sales,prev_month_sales)
