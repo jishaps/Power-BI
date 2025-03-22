@@ -27,3 +27,5 @@ from products table: Total Cost = SUMX(shipments,shipments[Boxes]*RELATED(produc
         VAR this_month_sales = CALCULATE(SELECTEDMEASURE(),'calendar'[Start of Month]=ld)
         VAR prev_month_sales = CALCULATE(SELECTEDMEASURE(),'calendar'[Start of Month]=EDATE(ld,-1))
     RETURN DIVIDE(this_month_sales-prev_month_sales,prev_month_sales)
+    12) field parameter
+    13) zoom slider
