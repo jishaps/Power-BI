@@ -31,3 +31,4 @@ from products table: Total Cost = SUMX(shipments,shipments[Boxes]*RELATED(produc
     13) zoom slider
     14) format painter
     15) conditional formatting
+    16) https://app.powerbi.com/groups/me/reports/e1e68e7d-d534-4e5a-8bb0-015bd347f5a2/dd13fce710e1d8204807?experience=power-bi
