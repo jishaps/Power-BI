@@ -1,4 +1,11 @@
 # Power-BI
+<img width="607" alt="Screenshot 2025-03-24 at 1 23 32 AM" src="https://github.com/user-attachments/assets/d421278f-790b-43b9-a591-009e8c8822d0" />
+
+[Link to the Portfolio project](https://app.powerbi.com/view?r=eyJrIjoiZmU2ODcwOTItNTBlZS00ZDViLTgyOWUtNWZmOWNmMzc4OTc3IiwidCI6ImNlN2MyYzVlLTQ1NmEtNGM5NC1iMWU2LTIyNDQ0ODdiNWNhOSIsImMiOjJ9)
+
+
+
+**Concepts Used:
 1) DAX for multiply 2 measures from 2 tables: 
 from products table: Total Cost = SUMX(shipments,shipments[Boxes]*RELATED(products[Cost per box]))
 2) division: Profit % = DIVIDE([Total Profit],[Total Sales])
