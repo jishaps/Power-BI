@@ -5,6 +5,7 @@
 <img width="607" alt="Screenshot 2025-03-24 at 1 23 32 AM" src="https://github.com/user-attachments/assets/d421278f-790b-43b9-a591-009e8c8822d0" />
 
 
+
 **Concepts Used:**
 1) Bins
 2) Parameters/dynamic visual based on slicer
