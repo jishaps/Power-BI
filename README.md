@@ -1,6 +1,7 @@
 # Power-BI
 
 [Link to this Portfolio project](https://app.powerbi.com/view?r=eyJrIjoiZmU2ODcwOTItNTBlZS00ZDViLTgyOWUtNWZmOWNmMzc4OTc3IiwidCI6ImNlN2MyYzVlLTQ1NmEtNGM5NC1iMWU2LTIyNDQ0ODdiNWNhOSIsImMiOjJ9)
+
 <img width="607" alt="Screenshot 2025-03-24 at 1 23 32 AM" src="https://github.com/user-attachments/assets/d421278f-790b-43b9-a591-009e8c8822d0" />
 
 
