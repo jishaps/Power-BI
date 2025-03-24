@@ -17,8 +17,7 @@
 8) Icon creation in tables, based on performance indicator column made with help of If function
 9) tooltip
 10) Calculated Groups
-11) DAX Calcultions
-    **Samples:**
+11) **DAX Calcultions Samples:**
         1) DAX for multiply 2 measures from 2 tables: 
         from products table: Total Cost = SUMX(shipments,shipments[Boxes]*RELATED(products[Cost per box]))
         2) division: Profit % = DIVIDE([Total Profit],[Total Sales])
