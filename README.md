@@ -9,7 +9,7 @@
 **Concepts Used:**
 1) Bins
 2) Parameters/dynamic visual based on slicer
-3) ookmark+Selection switch functionality
+3) Bookmark+Selection switch functionality
 4) New cards, with reference values (Design option for separate comditional formatting)
 5) Gauge with Target setting
 6) Zoom slider
